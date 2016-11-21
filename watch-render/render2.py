@@ -18,7 +18,7 @@
 # END GPL BLOCK
 
 bl_info = {
-    "name": "Renderwatch",  #Temporary name
+    "name": "watch-render",  #Temporary name
     "description": "Watches render usage to notify when a render is complete",
     "author": "Mark 'ibbolia' Fitzgibbon",
     "version": (0, 1),
@@ -26,7 +26,6 @@ bl_info = {
     "location": "Automatic",
     "warning": "System console must be open for Renderwatch to work currently",
     "support": "TESTING",
-    "wiki_url": "https://github.com/ibbolia/Blender_Renderwatch/wiki",
     "category": "Render"}
 
 import bpy, aud, os
@@ -46,14 +45,13 @@ class RenderWatchPrefs(AddonPreferences):
         name = "Render Sound",
         description = "Sound to play when Render completes successfully (render_complete)",
         subtype = 'FILE_PATH',
-        default = "C:/Users/ibbolia/Downloads/111-pokemon-recovery.mp3")
+        default = "")
        
        
 ## ---HANDLERS---
 @persistent
 def render_handler(dummy):
     print("Render Complete")
-    #locale = "C:/Users/ibbolia/Downloads/111-pokemon-recovery.mp3"#replace with mp3 of choice
     try:
         locale = bpy.context.user_preferences.addons[__name__].preferences.playsong
         sound = aud.Factory.file(locale)
@@ -66,7 +64,7 @@ def render_handler(dummy):
   
 ## ---USER INTERFACE---
 class UIPanel(bpy.types.Panel):
-    bl_label = "Renderwatch"
+    bl_label = "Watch Render"
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
  
