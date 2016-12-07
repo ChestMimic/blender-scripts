@@ -1,7 +1,7 @@
 #Change Log
 All notable changes will be tracked in this file
 
-##[Unreleased]
+##[1.1] - 2016-12-07
 ###Added
 - This Changelog
 - Script for an Automatic Turntable rendering
@@ -12,7 +12,7 @@ All notable changes will be tracked in this file
 ###Removed
 - Build file folder
 
-##[0.1] - 2016-11-22
+##[1.0] - 2016-11-22
 ###Added
 - Leftover script from (defunct) Renderwatch
 - Select All Children script
