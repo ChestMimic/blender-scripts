@@ -1,6 +1,12 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unsubmitted]
+###Changed
+- Automatic Turntable script setup for operator use
+- Orbital object generated to contain variables
+- Abstracted camera use in functions, can now take any bpy.camera object
+
 ##[1.1] - 2016-12-07
 ###Added
 - This Changelog
