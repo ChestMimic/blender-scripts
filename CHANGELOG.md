@@ -1,7 +1,7 @@
 #Change Log
 All notable changes will be tracked in this file
 
-##[Unsubmitted]
+##[1.2]
 ###Changed
 - Automatic Turntable script setup for operator use
 - Orbital object generated to contain variables
