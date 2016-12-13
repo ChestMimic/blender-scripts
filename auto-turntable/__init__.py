@@ -1,6 +1,10 @@
 bl_info = {
-	"name":"Orbital Render",
-	"category":"Operator",
+	"name":"Automatic Turntable",
+	"description":"Automatically focus camera to rotate around a selected object in a scene",
+	"version":(1,0),
+	"blender":(2,78,0),
+	"support":"TESTING",
+	"category":"Render",
 	"author":"ibbolia"
 }
 import bpy
@@ -49,8 +53,8 @@ class Orbital:
 
 class OrbitalOperator(bpy.types.Operator):
 	
-	bl_idname = "object.orbital_render"    #id name
-	bl_label = "Orbit selected"        #Display Label
+	bl_idname = "object.automatic_turntable"    #id name
+	bl_label = "Orbit selected object and render"        #Display Label
 	bl_options = {"REGISTER"}       #Possible operations
 
 	def execute(self, context):
