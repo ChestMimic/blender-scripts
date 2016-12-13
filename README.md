@@ -1,6 +1,6 @@
 Blender Scripts
 ===============
-Readme Version 1
+Readme Version 1.2
 (c) Mark Fitzgibbon 2016
 
 Description
@@ -10,6 +10,12 @@ Collection of BPY scripts and addons for Blender 3D modeling program.
 Download
 --------
 User can pull, fork, or download from the [Blender Scripts Repository](https://github.com/ibbolia/blender-scripts)
+
+Contents
+----------
+*Automatic Turntable - Automatically focus camera to rotate around a selected object in a scene
+*Select All Children - Select all of an object's children
+*Watch Render - (unstable) Audio cue when render task is completed
 
 Requirements
 ------------
@@ -26,12 +32,12 @@ Add-ons tab->Install from file
 
 License
 -------
-Repository and its contents are licensed under GNU General Public License.
+Repository is licensed under GNU General Public License.
 Full license detail can be found in LICENSE file 
 
 Further Details
 ---------------
-Relevant details to a specific script can be found in readme in /src/<name> if available
+Relevant details to a specific script can be found in lower level readme
 
 Contact
 -------
