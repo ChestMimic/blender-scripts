@@ -1,5 +1,5 @@
 bl_info = {
-	"name":"Orbital",
+	"name":"Orbital Render",
 	"category":"Operator",
 	"author":"ibbolia"
 }
@@ -21,7 +21,6 @@ class Orbital:
 		self.TT_ROTATION_Y = 0.0
 		self.TT_ROTATION_Z = 0.0
 		self.TT_RADIUS = 0.0
-	
 
 	def setToFrontview(self, camera):
 		#Move camera front and center
@@ -48,13 +47,11 @@ class Orbital:
 			camera.location= mathutils.Vector(self.TT_POSITION)
 			#bpy.ops.mesh.primitive_cube_add(location=self.TT_POSITION) 
 
-
 class OrbitalOperator(bpy.types.Operator):
 	
-	bl_idname = "object.orbital"    #id name
+	bl_idname = "object.orbital_render"    #id name
 	bl_label = "Orbit selected"        #Display Label
-	bl_options = {"REGISTER", "UNDO"}       #Possible operations
-
+	bl_options = {"REGISTER"}       #Possible operations
 
 	def execute(self, context):
 		obj_cam = bpy.data.objects["Camera"]
