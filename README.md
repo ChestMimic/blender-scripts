@@ -1,6 +1,6 @@
 Blender Scripts
 ===============
-Readme Version 1.2
+Readme Version 0.2
 (c) Mark Fitzgibbon 2016
 
 Description
