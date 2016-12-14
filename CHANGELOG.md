@@ -1,6 +1,10 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[0.3]
+###Moved
+- Automatic Turntable was requiring a lot of upkeep and will be moved to its own repository
+
 ##[0.2]
 ###Changed
 - Automatic Turntable script setup for operator use

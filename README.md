@@ -1,6 +1,6 @@
 Blender Scripts
 ===============
-Readme Version 0.2
+Readme Version 0.3
 (c) Mark Fitzgibbon 2016
 
 Description
@@ -13,9 +13,12 @@ User can pull, fork, or download from the [Blender Scripts Repository](https://g
 
 Contents
 ----------
-*Automatic Turntable - Automatically focus camera to rotate around a selected object in a scene
-*Select All Children - Select all of an object's children
-*Watch Render - (unstable) Audio cue when render task is completed
+-Select All Children - Select all of an object's children
+-Watch Render - (unstable) Audio cue when render task is completed
+
+Moved Contents
+--------------
+- [Automatic Turntable]
 
 Requirements
 ------------
