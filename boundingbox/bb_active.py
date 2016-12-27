@@ -15,3 +15,7 @@ print(ob.location)
 xPos = centre[0] + ob.location[0]
 yPos = centre[1] + ob.location[1]
 yPos = centre[2] + ob.location[2]
+
+print(str(xPos) + ", " + str(yPos) + ", " + str(zPos))
+for b in ob.bound_box:
+    print(Vector(b))
