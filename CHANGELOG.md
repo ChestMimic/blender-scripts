@@ -1,6 +1,10 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unreleased]
+###Added
+- Script that determines the global center of a bounding box (currently single object)
+
 ##[0.3]
 ###Moved
 - Automatic Turntable was requiring a lot of upkeep and will be moved to its own repository
