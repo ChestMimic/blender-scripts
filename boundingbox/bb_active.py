@@ -1,45 +1,56 @@
 import bpy
 from mathutils import Vector
 
-ob = bpy.context.active_object
+lst = bpy.context.selected_objects
 
-#get local bounding box center
-centre = sum((Vector(b) for b in ob.bound_box), Vector())
-centre /= 8
+xMin = None
+xMax = None
+yMin = None
+yMax = None
+zMin = None
+zMax = None
 
-print(centre)
-#translate to world geom
+print("RUN")
+#Obtain bounding box in an object's local space
+for ob in lst:
+	
+	print(ob.location)
+	loc = ob.location
 
-print(ob.location)
+	for b in ob.bound_box:
+		if xMax is None or ((Vector(b)[0] + ob.location[0]) > xMax):
+			xMax = Vector(b)[0] + ob.location[0]
+		if xMin is None or ((Vector(b)[0] + ob.location[0]) < xMin):
+			xMin = Vector(b)[0] + ob.location[0]
 
-xPos = centre[0] + ob.location[0]
-yPos = centre[1] + ob.location[1]
-zPos = centre[2] + ob.location[2]
+		if yMax is None or ((Vector(b)[1] + ob.location[1]) > yMax) :
+			yMax = Vector(b)[1] + ob.location[1]
+		if yMin is None or ((Vector(b)[1] + ob.location[1]) < yMin):
+			yMin = Vector(b)[1] + ob.location[1]
 
-print(str(xPos) + ", " + str(yPos) + ", " + str(zPos))
+		if zMax is None or ((Vector(b)[2] + ob.location[2]) > zMax):
+			zMax = Vector(b)[2] + ob.location[2]
+		if zMin is None or ((Vector(b)[2] + ob.location[2]) < zMin):
+			zMin = Vector(b)[2] + ob.location[2]
+		print(Vector(b))
 
-xMin = 0
-xMax = 0
-yMin = 0
-yMax = 0
-zMin = 0
-zMax = 0
+	print(zMax)
+	#print(str(zMax + loc[2]))
 
-for b in ob.bound_box:
-	if(Vector(b)[0] > xMax):
-		xMax = Vector(b)[0]
-	if(Vector(b)[0] < xMin):
-		xMin = Vector(b)[0]
 
-	if(Vector(b)[1] > yMax):
-		yMax = Vector(b)[1]
-	if(Vector(b)[1] < yMin):
-		yMin = Vector(b)[1]
+xMid = (xMin + xMax)/2
+yMid = (yMin + yMax)/2
+zMid = (zMin + zMax)/2
 
-	if(Vector(b)[2] > zMax):
-		zMax = Vector(b)[2]
-	if(Vector(b)[2] < zMin):
-		zMin = Vector(b)[2]
-	print(Vector(b))
+minimum = (xMin, yMin, zMin)
+maximum = (xMax, yMax, zMax)
+midpoint = (xMid, yMid, zMid)
 
-print(xMax)
+print("Minimum:")
+print(minimum)
+
+print("Maximum:")
+print(maximum)
+
+print("Midpoint:")
+print(midpoint)
