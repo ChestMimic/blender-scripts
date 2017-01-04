@@ -1,6 +1,11 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unreleased]
+###Changed
+- Bounding Box Script made easier to edit
+	- Utilizing lambda function for corner calculation
+
 ##[4] - 2016-12-27
 ###Added
 - Script that determines the global center of a bounding box
