@@ -8,3 +8,19 @@ bl_info = {
 	"author":"Mark Fitzgibbon"
 }
 import bpy
+
+verts = []
+edges = []
+faces = []
+
+mesh_data = bpy.data.meshes.new("mirror_box_mesh_data")
+mesh_data.from_pydata(verts, edges, faces)
+mesh_data.update()
+
+obj = bpy.data.objects.new("MrBox", mesh_data)
+
+scene = bpy.context.scene
+scene.objects.link(obj)
+obj.select = True
+
+obj.modifiers.new('MirrorBox', 'MIRROR')
