@@ -9,9 +9,12 @@ bl_info = {
 }
 import bpy
 
-verts = []
+verts = [(0.0, -1.0, 1.0),
+	(1.0, -1.0, 1.0),
+	(1.0, 0.0, 1.0),
+	(0.0, 0.0, 1.0)]
 edges = []
-faces = []
+faces = [(0,1,2,3)]
 
 mesh_data = bpy.data.meshes.new("mirror_box_mesh_data")
 mesh_data.from_pydata(verts, edges, faces)
