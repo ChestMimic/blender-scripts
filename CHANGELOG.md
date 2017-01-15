@@ -2,6 +2,9 @@
 All notable changes will be tracked in this file
 
 ##[Unreleased]
+###Added
+- Mirror-Box script
+
 ###Changed
 - Bounding Box Script made easier to edit
 	- Utilizing lambda function for corner calculation
