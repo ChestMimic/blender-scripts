@@ -1,13 +1,15 @@
 #Change Log
 All notable changes will be tracked in this file
 
-##[Unreleased]
+##[5] - 2017-01-15
 ###Added
-- Mirror-Box script
+- Mirror-Box Add-on
+	- Generate a cube shaped mesh with Mirror modifier already active
 
 ###Changed
 - Bounding Box Script made easier to edit
 	- Utilizing lambda function for corner calculation
+- Updates to Readme
 
 ##[4] - 2016-12-27
 ###Added
