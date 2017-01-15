@@ -15,27 +15,25 @@ print("RUN")
 for ob in lst:
 	
 	print(ob.location)
-	loc = ob.location
+	loc, rot, scale = ob.matrix_world.decompose();
+	
 
 	for b in ob.bound_box:
-		if xMax is None or ((Vector(b)[0] + ob.location[0]) > xMax):
-			xMax = Vector(b)[0] + ob.location[0]
-		if xMin is None or ((Vector(b)[0] + ob.location[0]) < xMin):
-			xMin = Vector(b)[0] + ob.location[0]
+		globalPos = lambda i: (Vector(b)[i])*scale[i] + loc[i]
+		if xMax is None or globalPos(0) > xMax:
+			xMax = globalPos(0)
+		if xMin is None or globalPos(0) < xMin:
+			xMin = globalPos(0)
 
-		if yMax is None or ((Vector(b)[1] + ob.location[1]) > yMax) :
-			yMax = Vector(b)[1] + ob.location[1]
-		if yMin is None or ((Vector(b)[1] + ob.location[1]) < yMin):
-			yMin = Vector(b)[1] + ob.location[1]
+		if yMax is None or globalPos(1) > yMax :
+			yMax = globalPos(1)
+		if yMin is None or globalPos(1) < yMin:
+			yMin = globalPos(1)
 
-		if zMax is None or ((Vector(b)[2] + ob.location[2]) > zMax):
-			zMax = Vector(b)[2] + ob.location[2]
-		if zMin is None or ((Vector(b)[2] + ob.location[2]) < zMin):
-			zMin = Vector(b)[2] + ob.location[2]
-		print(Vector(b))
-
-	print(zMax)
-	#print(str(zMax + loc[2]))
+		if zMax is None or globalPos(2) > zMax:
+			zMax = globalPos(2)
+		if zMin is None or globalPos(2) < zMin:
+			zMin = globalPos(2)
 
 
 xMid = (xMin + xMax)/2

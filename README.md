@@ -1,7 +1,7 @@
 Blender Scripts
 ===============
-Readme Version 4
-(c) Mark Fitzgibbon 2016
+Readme Version 5
+(c) Mark Fitzgibbon 2017
 
 Description
 -----------
@@ -13,10 +13,10 @@ User can pull, fork, or download from the [Blender Scripts Repository](https://g
 
 Contents
 ----------
--boundingbox - Determine the midpoint and extreme corners of a group of objects
--Select All Children - Select all of an object's children
--Watch Render - (unstable) Audio cue when render task is completed
-
+- boundingbox - Determine the midpoint and extreme corners of a group of objects
+- Select All Children - Select all of an object's children
+- Watch Render - (unstable) Audio cue when render task is completed
+- Mirror Box - Create a Cube with Mirror Modifier
 
 
 Requirements
