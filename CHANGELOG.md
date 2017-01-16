@@ -1,6 +1,11 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unreleased]
+###Added
+- build directory
+	-contains zip folders of full addons located in repo
+
 ##[5] - 2017-01-15
 ###Added
 - Mirror-Box Add-on
