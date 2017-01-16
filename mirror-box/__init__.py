@@ -54,6 +54,7 @@ class MirrorBox(bpy.types.Operator):
 		mesh_data.update()
 
 		obj = bpy.data.objects.new("MrBox", mesh_data)
+		obj.location = bpy.context.scene.cursor_location
 
 		scene = bpy.context.scene
 		scene.objects.link(obj)

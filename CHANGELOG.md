@@ -4,7 +4,10 @@ All notable changes will be tracked in this file
 ##[Unreleased]
 ###Added
 - build directory
-	-contains zip folders of full addons located in repo
+	- contains zip folders of full addons located in repo
+
+###Changed
+- Cursor location add to Mirror Box
 
 ##[5] - 2017-01-15
 ###Added
