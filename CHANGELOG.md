@@ -1,6 +1,14 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[6] - 2017-01-16
+###Added
+- build directory
+	- contains zip folders of full addons located in repo
+
+###Changed
+- Cursor location add to Mirror Box
+
 ##[5] - 2017-01-15
 ###Added
 - Mirror-Box Add-on
