@@ -1,7 +1,7 @@
 #Change Log
 All notable changes will be tracked in this file
 
-##[Unreleased]
+##[6] - 2017-01-16
 ###Added
 - build directory
 	- contains zip folders of full addons located in repo
