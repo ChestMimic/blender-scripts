@@ -4,6 +4,7 @@ All notable changes will be tracked in this file
 ##[Unreleased]
 ###Added
 - MirrorBoxInfo class to generate Mirror boxes of various radii
+- MIrrorBox item is accessible through Add (INFO_MT_add) menu
 
 ##[6] - 2017-01-16
 ###Added

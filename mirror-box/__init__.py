@@ -68,8 +68,15 @@ class MirrorBoxOperator(bpy.types.Operator):
 		obj.modifiers.new('MirrorBox', 'MIRROR')
 		return {'FINISHED'}
 
+def add_MirrorBox_button(self, context):
+	self.layout.operator(
+		MirrorBoxOperator.bl_idname,
+		text = "TBD",
+		icon = "PLUGIN")
+
 def register():
 	bpy.utils.register_class(MirrorBoxOperator)
+	bpy.types.INFO_MT_add.append(add_MirrorBox_button)  
 
 def unregister():
 	bpy.utils.unregister_class(MirrorBoxOperator)
