@@ -1,6 +1,10 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unreleased]
+###Added
+- MirrorBoxInfo class to generate Mirror boxes of various radii
+
 ##[6] - 2017-01-16
 ###Added
 - build directory
