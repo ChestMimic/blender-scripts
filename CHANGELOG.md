@@ -1,6 +1,12 @@
 #Change Log
 All notable changes will be tracked in this file
 
+##[Unreleased]
+###Added
+- MirrorBoxInfo class to generate Mirror boxes of various radii
+- MirrorBox item is accessible through Add (INFO_MT_add) menu
+- MirrorBox creates Keymap to affect Radius after creation
+
 ##[6] - 2017-01-16
 ###Added
 - build directory
