@@ -1,9 +1,29 @@
+# BEGIN GPL BLOCK    
+#    Generates a mirrored cube at 3D Cursor location
+#    Copyright (C) 2017  Mark Fitzgibbon
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# END GPL BLOCK
 bl_info = {
 	"name":"Mirror Box",
-	"description":"Generate a mirrored, subdivided version of the starting cube",
-	"version":(0,2,0),
+	"description":"Generates a mirrored cube at 3D Cursor location",
+	"location":"Add",
+	"tracker_url":"https://github.com/ibbolia/blender-scripts/issues",
+	"version":(1,0,0),
 	"blender":(2,78,0),
-	"support":"TESTING",
+	"support":"COMMUNITY",
 	"category":"Objects",
 	"author":"Mark Fitzgibbon"
 }
@@ -74,8 +94,8 @@ class MirrorBoxOperator(bpy.types.Operator):
 def add_MirrorBox_button(self, context):
 	self.layout.operator(
 		MirrorBoxOperator.bl_idname,
-		text = "TBD",
-		icon = "PLUGIN")
+		text = "MrBox",
+		icon = "MOD_MIRROR")
 
 addon_keymaps = []
 
@@ -93,6 +113,7 @@ def register():
 
 def unregister():
 	bpy.utils.unregister_class(MirrorBoxOperator)
+	bpy.types.INFO_MT_add.remove(add_MirrorBox_button)
 	for km, kmi in addon_keymaps:
 		km.keymap_items.remove(kmi)
 	addon_keymaps.clear()
