@@ -1,6 +1,7 @@
 Blender Scripts
 ===============
-Readme Version 6
+Version 0.7
+-----------
 (c) Mark Fitzgibbon 2017
 
 Description
@@ -9,15 +10,17 @@ Collection of BPY scripts and addons for Blender 3D modeling program.
 
 Download
 --------
-User can pull, fork, or download from the [Blender Scripts Repository](https://github.com/ibbolia/blender-scripts)
+User can pull, fork, or download from the 
+[Blender Scripts Repository](https://github.com/ibbolia/blender-scripts)
+
+User can also download individual addons and scripts from the build folder
 
 Contents
 ----------
 - boundingbox - Determine the midpoint and extreme corners of a group of objects
-- Select All Children - Select all of an object's children
-- Watch Render - (unstable) Audio cue when render task is completed
 - Mirror Box - Create a Cube with Mirror Modifier
-
+- Select All Children - Select all of an object's children
+- Watch Render - [deprecated] Audio cue when render task is completed
 
 Requirements
 ------------

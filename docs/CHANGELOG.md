@@ -2,12 +2,19 @@
 All notable changes will be tracked in this file
 
 ##[Unreleased]
+###Changed
+- Restructured all files into docs, src, and build folders
+
+##[0.7] - 2017-01-20
 ###Added
 - MirrorBoxInfo class to generate Mirror boxes of various radii
 - MirrorBox item is accessible through Add (INFO_MT_add) menu
 - MirrorBox creates Keymap to affect Radius after creation
 
-##[6] - 2017-01-16
+###Changed
+- Return versioning numbers to X.Y[.Z] format
+
+##[0.6] - 2017-01-16
 ###Added
 - build directory
 	- contains zip folders of full addons located in repo
@@ -15,7 +22,7 @@ All notable changes will be tracked in this file
 ###Changed
 - Cursor location add to Mirror Box
 
-##[5] - 2017-01-15
+##[0.5] - 2017-01-15
 ###Added
 - Mirror-Box Add-on
 	- Generate a cube shaped mesh with Mirror modifier already active
@@ -25,7 +32,7 @@ All notable changes will be tracked in this file
 	- Utilizing lambda function for corner calculation
 - Updates to Readme
 
-##[4] - 2016-12-27
+##[0.4] - 2016-12-27
 ###Added
 - Script that determines the global center of a bounding box
 	- Operates on all selected objects in a scene and determines min and max corners and midpoint 
@@ -34,18 +41,18 @@ All notable changes will be tracked in this file
 - Release numbering shifted to simple increment. 
 	- Scripts will not be considered "officially released" at any point.
 
-##[3]
+##[0.3]
 ###Moved
 - Automatic Turntable was requiring a lot of upkeep and will be moved to its own repository
 
-##[2]
+##[0.2]
 ###Changed
 - Automatic Turntable script setup for operator use
 - Orbital object generated to contain variables
 - Abstracted camera use in functions, can eventually take any bpy.camera object
 - Operator can successfully perform front-side-rear rendering of selected object
 
-##[1] - 2016-12-07
+##[0.1] - 2016-12-07
 ###Added
 - This Changelog
 - Script for an Automatic Turntable rendering
